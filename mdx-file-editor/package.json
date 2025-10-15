@@ -1,0 +1,29 @@
+{
+  "name": "mdx-file-editor",
+  "version": "1.0.0",
+  "description": "A simple MDX file editor built with React and TypeScript.",
+  "main": "src/editor.tsx",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "mdx-js/react": "^1.6.22"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.4",
+    "react-scripts": "4.0.3"
+  },
+  "keywords": [
+    "mdx",
+    "editor",
+    "react",
+    "typescript"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
