@@ -1,0 +1,19 @@
+.edit-link {
+	color: var(--ifm-color-primary);
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+
+	span {
+
+        svg {
+            fill: var(--ifm-color-primary);
+        }
+
+        :hover {
+			text-decoration: underline;
+		}
+	}
+}

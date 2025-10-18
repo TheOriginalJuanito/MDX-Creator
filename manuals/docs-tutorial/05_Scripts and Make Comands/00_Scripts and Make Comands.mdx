@@ -1,0 +1,108 @@
+---
+id: 'make-commands'
+sidebar_label: 'Make Commands'
+sidebar_position: 1
+slug: '/make-commands'
+description: 'Make Commands'
+---
+
+# Make Comands
+
+Theare are a cuple of usefull make comands to help you with the development in Docusaurus.
+
+
+----------
+
+##  New Doc
+This command will prompt you for the name of the new doc and creates the necessary files.
+
+```bash title='Terminal'
+make new-docs
+```
+
+----------
+
+##  New Version
+
+This command will prompt you. Which doc you want to Version and the Name of the new Version. Then it will create the necessary files and do the changes in the config file.
+
+```bash title='Terminal'
+make new-Version
+```
+
+
+----------
+
+##  New-Component
+
+This command will prompt you for the name of the new component and creates the necessary files and link them in the `MDXComponents` file.
+
+```bash title='Terminal'
+make new-component
+```
+
+
+
+----------
+
+
+## Swizzle
+
+This is a easy way to swizzle a component. It will prompt you for the name of the component you want to swizzle and do the rest for you.
+
+```bash title='Terminal'
+make swizzle
+```
+
+
+If you are unsure of wich component to swizzle you can run
+```bash title='Terminal'
+make swizzle-list
+```
+to get a list of all swizzleable components and their safety.
+
+
+
+----------
+
+## Restart
+
+ If you are working on components ore in `.env` / `config` files you might need to restart the Container to see the changes. This command will automaticly doo that for you.
+
+ ```bash title='Terminal'
+make restart
+```
+Somtimes the *Soft* restart does not suffice. In that case you can do a *Hard* restart with
+
+ ```bash title='Terminal'
+make full-restart
+```
+ :::info[Info]
+ This will stop **all** Containers and remove the the cache of the docusaurus Container. This is somtimes necessary
+ when you doo changes with Versions ore docs.
+ :::
+
+
+----------
+
+
+
+## update
+
+To Update the Docusaurus version and all dependencies you can run
+
+ ```bash title='Terminal'
+make update
+```
+
+If you want to know the curent version of Docusaurus you can run
+
+ ```bash title='Terminal'
+make docusaurus-version
+```
+
+after Updates running 'package-fix' is recommended
+
+ ```bash title='Terminal'
+make package-fix
+```

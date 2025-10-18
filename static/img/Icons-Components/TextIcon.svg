@@ -1,0 +1,13 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon circle background -->
+  <circle cx="8" cy="10" r="6" fill="#E84545" stroke="#222" stroke-width="1"/>
+  <!-- Icon symbol (star) -->
+  <path d="M8 6l1.236 2.472L12 9l-2.764.528L8 12l-1.236-2.472L4 9l2.764-.528L8 6z" fill="white"/>
+  <!-- Text lines -->
+  <rect x="16" y="8" width="12" height="2" rx="1" fill="#2B2E4A"/>
+  <rect x="16" y="12" width="8" height="2" rx="1" fill="#2B2E4A"/>
+  <!-- Second text block -->
+  <rect x="6" y="20" width="14" height="2" rx="1" fill="#2B2E4A"/>
+  <rect x="6" y="24" width="10" height="2" rx="1" fill="#2B2E4A"/>
+  <rect x="6" y="28" width="16" height="2" rx="1" fill="#2B2E4A"/>
+</svg>

@@ -1,0 +1,17 @@
+.freeimageContainer {
+    width: 100%;
+    position: relative;
+    
+    
+}
+
+@media (max-width: 768px) {
+    .freeimageContainer {
+        max-height: 100vh;
+        overflow: hidden;
+        aspect-ratio: unset !important;
+        margin-bottom: 50px
+        
+    }
+}
+ 

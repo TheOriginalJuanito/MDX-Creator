@@ -1,0 +1,36 @@
+image: php:8.3-fpm-bookworm
+definitions:
+  steps:
+
+    - step: &compile
+        name: Build docusaurus
+        image: node:23
+        script:
+          - npm install
+          - npm ci
+          - npm run build
+        artifacts:
+          - build/**
+
+
+    - step: &deploy-build
+        name: Deploy build folder to server via SCP
+        deployment: production
+        script:
+          - curl ipinfo.io && echo "Debugging IP address"
+          - pipe: atlassian/scp-deploy:1.5.2
+            variables:
+              USER: $USER
+              SERVER: $SERVER
+              REMOTE_PATH: ${PROJECT_DIR}
+              LOCAL_PATH: 'build/*'
+              DEBUG: 'false'
+              EXTRA_ARGS: ["-P", "2121"]
+
+
+pipelines:
+  branches:
+    develop:
+      - step: *compile
+      #- step: *testing
+      - step: *deploy-build

@@ -1,0 +1,20 @@
+* {
+	--icon-fontsize: 20px;
+}
+
+.icon {
+	display: inline;
+	height: var(--icon-fontsize);
+}
+
+.icon img {
+	transform: translate( -0%, calc(30% - 3.4px) );
+	height: var(--icon-fontsize);
+    width: unset;
+}
+
+.icon svg {
+    height: var(--icon-fontsize);
+    width: unset;
+    vertical-align: middle;
+}

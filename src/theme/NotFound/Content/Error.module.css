@@ -1,0 +1,45 @@
+/* 404 Page */
+.ErrorPage {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--ifm-color-primary-lighter);
+}
+
+
+.ErrorPage span {
+    padding: 20px;
+}
+
+.ErrorPage  h2 {
+    font-size: clamp(95px, 15vw, 240px);
+    margin-bottom: 0px;
+}
+
+.ErrorPage  p {
+    color: var(--Text);
+    margin: 5px;
+    font-size: large;
+}
+
+.ErrorPage  .Subtext {
+    color: var(--ifm-color-primary-lighter);
+    margin: 0 0 25px 0;
+    width: 100%;
+
+}
+
+.ErrorPage  main a {
+    text-decoration: underline;
+    color: var(--docsearch-Lnk-color);
+    font-weight: bold;
+}
+.ErrorPage  main a:hover {
+    text-decoration: none;
+    color: var(--ifm-color-primary);
+}

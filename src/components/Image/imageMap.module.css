@@ -1,0 +1,122 @@
+.ImagemapContainer {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+
+    img {
+        width: 100%;
+    };
+}
+
+.marker {
+    width: 8vw;
+    max-width: 30px;
+    aspect-ratio: 1/1;
+    background-color: var(--custom-red);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+}
+
+.circleMarker {
+    background-color: transparent;
+    color: transparent;
+    border: 2px solid var(--custom-red);
+}
+
+@media (min-width: 0px) {
+    .marker {
+        width: 5vw;
+        font-size: 2vw;
+
+    }
+
+    .lightbox>div {
+        width: 100vw;
+    }
+
+}
+
+@media (min-width: 576px) {
+    .marker {
+        width: 5vw;
+        font-size: 2vw;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .marker {
+        width: 5vw;
+        font-size: 2vw;
+
+    }
+}
+
+
+@media (min-width: 992px) {
+    .marker {
+        width: 2.5vw;
+        font-size: 1vw;
+
+    }
+
+    .lightbox>div {
+        width: 75dvw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .marker {
+        width: 2.5vw;
+        font-size: 1vw;
+
+    }
+}
+
+@media (min-width: 1400px) {
+    .marker {
+        width: 10vw;
+        font-size: 17px;
+    }
+
+    .lightbox>div {
+        width: 50dvw;
+    }
+}
+
+
+/* Ligth Box */
+
+.lightbox {
+    position: fixed;
+    height: 100dvh;
+    width: 100dvw;
+    background-color: #3f3f3fa5;
+    top: 0;
+    z-index: 10000;
+    left: 0;
+}
+
+.lightbox>div {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lightbox>img {
+    max-height: 80dvh;
+    transform: translateY(-50%);
+	width: 100%;
+}

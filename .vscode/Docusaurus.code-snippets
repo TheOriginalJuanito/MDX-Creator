@@ -1,0 +1,73 @@
+{
+    "header": {
+        "scope": "markdown,plaintext",
+        "prefix": "Header",
+        "body": [
+            "---",
+            "id: '${3}'",
+            "sidebar_label: '${1}'",
+            "sidebar_position: ${2}",
+            "slug: ${3}",
+            "description: '${1}'",
+            "---",
+            "",
+            "# ${1}",
+            "${0}"
+        ],
+        "description": "InsertDocusaurus Header"
+    },
+
+    "Info-Box": {
+        "scope": "markdown,plaintext",
+        "prefix": "box",
+        "body": [
+            ":::${1|note,tip,info,warning,danger|}[$2]",
+            "$3",
+            ":::",
+            "$0"
+        ],
+        "description": "Insert the default Docusaurus Note container"
+    },
+
+    "Code": {
+		"scope": "markdown,plaintext",
+		"prefix": "Code",
+		"body": [
+            "```${1|html,css,javascript,typescript,python,java,go,rust,php,csharp,cpp,bash,json,yaml,markdown,jsx|} title='${2:index.html}'  ${3| ,showLineNumbers|}",
+			"$0",
+			"```"
+		]
+	},
+
+    "Details": {
+        "scope": "markdown,plaintext",
+        "prefix": "Details",
+        "body": [
+			"<details>",
+			"<summary>${1:Title}</summary>",
+			"</details>",
+        ]
+    },
+
+    "Tab": {
+        "scope": "markdown,plaintext",
+        "prefix": "Tab",
+        "body": [
+            "<Tabs>",
+            "${0}",
+            "</Tabs>"
+        ]
+    },
+
+    "TabItem": {
+        "scope": "markdown,plaintext",
+        "prefix": "TabItem",
+        "body": [
+            "<TabItem value=\"${1:Programming Language}\" label=\"${2:Tab label}\">",
+            "  $3",
+            "</TabItem>"
+        ]
+    },
+
+
+}

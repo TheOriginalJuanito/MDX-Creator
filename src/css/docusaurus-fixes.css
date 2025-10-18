@@ -1,0 +1,31 @@
+/* Fix Navigation disapearing on scroll */
+#__docusaurus {
+  min-height: unset !important;
+
+}
+
+#__docusaurus_skipToContent_fallback {
+    min-height: 100vh !important;
+}
+
+@media (min-width: 997px) {
+  .sidebarViewport_aRkj {
+    height: auto !important;
+  }
+}
+
+.dropdown--right > a {
+	display: none;
+	&.active {
+		display: inline;
+	}
+}
+
+/* Footnotes */
+.data-footnote-backref {
+    display: none !important;
+}
+
+#footnote-label {
+    display: none !important;
+}

@@ -1,0 +1,15 @@
+/* styles.module.css */
+.progressBarContainer {
+	width: 100%;
+	position: sticky;
+	top: 75px;
+	background-color: none;
+	z-index: 200;
+	transform: translate(0, -15px);
+}
+
+.progressBar {
+	height: 2px;
+	background: var(--ifm-color-primary-lightest);
+	width: 0%;
+}

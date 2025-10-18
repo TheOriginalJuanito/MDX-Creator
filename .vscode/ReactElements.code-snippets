@@ -1,0 +1,184 @@
+{
+	"Card": {
+		"scope": "markdown,plaintext",
+		"prefix": "Card",
+		"body": [
+			"<Card bg='img/${RELATIVE_FILEPATH/\\.[^\\.]+$//}${1:/ImageName}' LinkTo='/${2:Card}' label='${3:Button Label}' scale={${4:0}}>;",
+				"Card Content;",
+			"</Card>;"
+		],
+		"description": ""
+	},
+
+
+	"CardLink": {
+		"scope": "markdown,plaintext",
+		"prefix": "CardLink",
+		"body": [
+			"<CardLink href='${1:https://example.com}' title='${2:Link Title}' />",
+		],
+		"description": ""
+	},
+
+
+	"ColorBoxes": {
+		"scope": "markdown,plaintext",
+		"prefix": "ColorBoxes",
+		"body": [
+			"<ColorBoxes pantone='${1:287}' cmyk='${2:100 | 66 | 0 | 0}' web='${3:#fff}' rgb='${4:rgb(0, 85, 163)}'>${5:Weiss}</ColorBoxes>"
+		],
+		"description": ""
+	},
+
+
+	"ImgCardLink": {
+        "prefix": "ImageCardLink",
+        "scope": "markdown,plaintext",
+        "body": [
+            "<ImgCardLink bg='img/${RELATIVE_FILEPATH/\\.[^\\.]+$//}${1:/ImageName}' title='${2:Title}' LinkTo='${3:content-elemente-display}'>",
+            "  ${0:Content}",
+            "</ImgCardLink>"
+        ],
+        "description": ""
+    },
+
+
+    "DownloadBTN": {
+        "prefix": "Downloadbtn",
+        "scope": "markdown,plaintext",
+        "body": [
+            "<DownloadBTN href='documents/${RELATIVE_FILEPATH/\\.[^\\.]+$//}' name='${2:filename.ext}' label='${3:Download}' />",
+            "${0}"
+        ],
+        "description": ""
+    },
+
+
+	"FontFamily": {
+		"scope": "markdown,plaintext",
+		"prefix": "FontFamily",
+		"body": [
+			"<FontFamily Font='${1:Inter}'>",
+			"    ${2:Text}",
+			"</FontFamily>"
+		],
+		"description": ""
+	},
+
+
+	"FreeImage": {
+		"prefix": "Freeimage",
+		"scope": "markdown,plaintext",
+		"body": [
+			"<FreeImage aspectRatio='${1:16/9}'>",
+			"  ${0}",
+			"</FreeImage>"
+		],
+		"description": ""
+	},
+
+
+	"Image": {
+		"prefix": "Image",
+		"scope": "markdown,plaintext",
+		"body": [
+			"<Image imgSrc='img/${RELATIVE_FILEPATH/^.{13}(.*).{4}$/$1/}${1:/ImageName}'>",
+			"  ${0:Content}",
+			"</Image>"
+		],
+		"description": ""
+	},
+
+
+	"ImgPosition": {
+        "prefix": "ImgPosition",
+        "scope": "markdown,plaintext",
+        "body": [
+            "   <ImgPosition Top='${1:10px}' Left='${2:10px}' Width='${3:100px}' src='img/${RELATIVE_FILEPATH/\\.[^\\.]+$//}${1:/ImageName}' Border='${5:8px}' />",
+            "${0}"
+        ],
+        "description": ""
+    },
+
+
+	"Markers": {
+        "prefix": "Markers",
+        "scope": "markdown,plaintext",
+        "body": [
+            "<Markers top='${1}%' left='${2}%' type='${3|square, outline|}' markerWidth='${4}%' markerHeight='${5}%' Link='${6}'>${7}</Markers>",
+            "${0}"
+        ],
+        "description": ""
+    },
+
+
+	"MasonryGallery": {
+        "scope": "markdown,plaintext",
+        "prefix": "MasonryGallery",
+        "body": [
+            "<MasonryGallery>",
+			"${0}",
+            "</MasonryGallery>"
+        ],
+        "description": ""
+    },
+
+
+	"Reference": {
+        "scope": "markdown,plaintext",
+        "prefix": "Reference",
+        "body": [
+            "<Reference Link='${1}'>${0}</Reference> ",
+        ],
+        "description": ""
+    },
+
+
+	"Title": {
+        "prefix": "Title",
+        "scope": "markdown,plaintext",
+        "body": [
+			"<Title>",
+			"${1:Your Title}",
+			"</Title>", "${0}"
+		],
+        "description": ""
+    },
+
+
+	"Icon": {
+		"prefix": "Icon",
+		"scope": "markdown,plaintext",
+		"body": [
+			"<Icon src='img/${RELATIVE_FILEPATH/^.{13}(.*).{4}$/$1/}/icons ${1:/ImageName} ' />"
+		],
+		"description": ""
+	},
+
+
+    // ReactBootstrap Snippets
+    "Container": {
+        "prefix": "container",
+        "scope": "markdown,plaintext",
+        "body": ["<Container>", "    $0", "</Container>"],
+        "description": "Container element"
+    },
+    "Row": {
+        "prefix": "row",
+        "body": ["<Row>", "    $0", "</Row>"],
+        "description": "Row element"
+    },
+    "colum": {
+        "prefix": "col",
+        "scope": "markdown,plaintext",
+        "body": [
+            "<Col xs={${1|12,6,4,3,11,10,9,8,7,5,2,1|}}>",
+            "    $0",
+            "</Col>"
+        ],
+        "description": "Colum Element with Options"
+    },
+
+
+}
+

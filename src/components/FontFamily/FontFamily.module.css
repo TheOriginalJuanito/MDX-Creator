@@ -1,0 +1,7 @@
+.fontDisplay {
+    margin: 20px 0;
+}
+.fontDisplay > p:first-of-type {
+    font-size: xx-large;
+    font-family: var(--font-family);
+}

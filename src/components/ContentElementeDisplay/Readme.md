@@ -1,0 +1,14 @@
+
+# ImgCardLink
+``jsx title='index.mdx'  showLineNumbers
+<ImgCardLink bg='/img/logo.png' title='Title' LinkTo='content-elemente-display'>
+    Content
+</ImgCardLink>
+```
+
+
+## Props
+
+1. `bg` :String - The background Icon URL (From the `Static` folder on).
+2. `title` :String - The title of the card will be displayed in the Primary Color.
+3. `LinkTo` :String - The link destination (can be linked via `Docusaurus ID`).

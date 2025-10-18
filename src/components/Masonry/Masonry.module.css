@@ -1,0 +1,40 @@
+:root {
+    --row-on-lg: 3
+    --row-on-md: 2
+}
+
+
+.masonrygrid {
+  display: flex;
+  width: auto;
+}
+
+.masonrysizer,
+.masonryitem {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.masonryitem {
+    border: 5px solid var(--fim-color-darkmode-bg);
+    border-radius: 8px;
+    padding: 2px;
+
+}
+
+@media (min-width: 768px) {
+    .masonrysizer,
+    .masonryitem {
+      width: calc(100% / var(--row-on-md));
+      box-sizing: border-box;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .masonrysizer,
+    .masonryitem {
+      width: calc(100% / var(--row-on-lg));
+      box-sizing: border-box;
+    }
+}

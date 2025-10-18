@@ -1,0 +1,42 @@
+---
+id: 'reference'
+sidebar_label: 'Reference'
+sidebar_position: 11
+slug: /reference
+description: 'Reference'
+---
+
+# Reference
+
+With the use of the `<Reference>` component, you can create interactive reference links within your <Reference link="0">documentation</Reference>. This component allows you to link to specific sections or items in your documentation <Reference link="1">to coresponding</Reference> markers on an image.
+
+
+
+
+
+<Image imgSrc="/img/docusaurus-social-card.jpg">
+   <Markers  top="10.04%" left="13.37%" link="0"> 0</Markers>
+   <Markers  top="33.82%" left="5.06%" link="1"> 1</Markers>
+</Image>
+
+
+----------
+
+
+To creat eadd a `link="0"` Link Prop to a Marker.
+
+```jsx title='index.md'  showLineNumbers
+<Image imgSrc="/img/docusaurus-social-card.jpg">
+   <Markers  top="10.04%" left="13.37%" link="0"> 0</Markers>
+   <Markers  top="33.82%" left="5.06%" link="1">1</Markers>
+</Image>
+```
+
+
+then reference a section in your Text, then referencing the same Link in your ReferenceComponent Prop.
+
+```jsx title='index.md'  showLineNumbers
+<Reference link="0">documentation (0)</Reference>.
+```
+
+

@@ -1,0 +1,80 @@
+/* Farbwelt */
+.logofarben {
+    flex-direction: column;
+    height: 200px;
+    margin: 10px 0;
+    color: var(--custom-color-text);
+
+}
+.logofarben h3 {
+    margin: 0 15px;
+}
+
+.logofarben div{
+    border-radius: 25px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: '100%';
+    height: '100%';
+}
+
+.logofarben div:hover {
+    cursor: pointer;
+}
+
+
+.logofarben span {
+    font-size: small;
+    display: block;
+    padding-left: 5px;
+    font-weight: 200;
+}
+
+
+/* schmukfarben */
+.schmuckfarbencontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.schmuckfarben {
+    width: 45%;
+    border-radius: 25px;
+    padding: 75px;
+    margin: 10px;
+    display: flex;
+    position: relative;
+}
+
+.schmukfarbenTop {
+    width: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    border-radius: 25px 0;
+    background-color: inherit;
+}
+
+
+.schmuckfarben span {
+    font-size: small;
+    display: block;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.schmuckfarben span:nth-last-of-type(1) {
+    margin-top: 0px;
+}
+
+
+.schmuckfarben div:nth-last-of-type(1) {
+    position: absolute;
+    left: 5px;
+
+}
+ 

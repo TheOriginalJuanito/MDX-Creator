@@ -1,0 +1,34 @@
+---
+id: 'card-link'
+sidebar_label: 'CardLink'
+sidebar_position: 3
+slug: /card-link
+description: 'CardLink'
+---
+
+# CardLink
+
+
+<Container>
+    <Row>
+        <Col xs={12} md={6}>
+            <CardLink href='/card-link' title='Card Title' />
+        </Col>
+        <Col xs={12} md={6}>
+            <CardLink href='/card-link' title='Card Title' />
+        </Col>
+    </Row>
+</Container>
+
+---
+
+```jsx title='index.mdx'  showLineNumbers
+<CardLink href='/card-link' title='Card Title' />
+```
+
+The `CardLink` component displays a clickable card, typically used for navigation or highlighting key content. It accepts a URL and a title, rendering a styled card that links to the specified page.
+
+## Props
+
+1. `href` :String - The URL to navigate to on click.
+2. `title` :String - The text displayed on the card.

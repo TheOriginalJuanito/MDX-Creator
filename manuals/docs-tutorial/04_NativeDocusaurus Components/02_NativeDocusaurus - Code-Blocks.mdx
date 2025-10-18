@@ -1,0 +1,93 @@
+---
+id: 'code-blocks'
+sidebar_label: 'Code Blocks'
+sidebar_position: 2
+slug: /code-blocks
+description: 'Code Blocks'
+---
+
+# Code Blocks
+
+Docusaurus provides a variety of ways to display code blocks with syntax highlighting and other features.
+
+
+## Default code Block 
+
+```html title='index.html' showLineNumbers
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Docusaurus Site</title>
+</head>
+<body>
+    <h1>Hello, world!</h1>
+</body>
+</html>
+```
+
+The default Code block is written like this:
+`html title='index.html' showLineNumbers`
+
+### Props
+
+
+1. File type (Html/JS/Css/PHP....)
+2. (optional) - name of the File
+3. (optional) - show line numbers
+
+
+All this is enclodes in three ` brackets
+
+
+
+
+
+## Advanced Code Block
+
+
+the advanced codeblock allows for tabs in the code block.
+
+<Tabs>
+<TabItem value="js" label="JavaScript">
+
+```js
+function helloWorld() {
+  console.log('Hello, world!');
+}
+```
+
+</TabItem>
+<TabItem value="py" label="Python">
+
+```py
+def hello_world():
+  print("Hello, world!")
+```
+
+</TabItem>
+<TabItem value="java" label="Java">
+
+```java
+class HelloWorld {
+  public static void main(String args[]) {
+    System.out.println("Hello, World");
+  }
+}
+```
+
+</TabItem>
+</Tabs>
+
+
+---
+
+To create this Code block the Docusaurus Native Components Tab and TabItem can be used.
+
+```jsx title='index.mdx'  showLineNumbers
+<Tabs>
+    <TabItem value="Programming Language" label="Tab label">
+        ## Basic code block
+    </TabItem>
+</Tabs>
+```
+Each TabItem creates a tab in the code block.

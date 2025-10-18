@@ -1,0 +1,53 @@
+---
+id: 'color-boxes'
+sidebar_label: 'Color Boxes'
+sidebar_position: 4
+slug: /color-boxes
+description: 'Color Boxes'
+---
+
+# Color Boxes
+
+<Container>
+  <Row>
+    <Col xs={12} md={6} lg={4}>
+        <ColorBoxes pantone="287" cmyk="100 | 66 | 0 | 0" web="#009fe3" rgb="rgb(0, 85, 163)">CYAN</ColorBoxes  >
+    </Col>
+    <Col xs={12} md={6} lg={4}>
+        <ColorBoxes textcolor="#fff" pantone="287" cmyk="100 | 66 | 0 | 0" web="#000" rgb="rgb(0, 85, 163)">Schwarz</ColorBoxes>
+    </Col>
+    <Col xs={12} md={6} lg={4}>
+        <ColorBoxes pantone="287" cmyk="100 | 66 | 0 | 0" web="#fff" rgb="rgb(0, 85, 163)">Weiss</ColorBoxes>
+    </Col>
+  </Row>
+</Container>
+
+```jsx title='index.mdx'  showLineNumbers
+<ColorBoxes pantone="287" cmyk="100 | 66 | 0 | 0" web="#fff" rgb="rgb(0, 85, 163)">Weiss</ColorBoxes>
+```
+
+
+
+
+The Colored Boxes Component is used to display a color in different values.
+
+## Props
+
+
+1. `pantone` :String - The Pantone color code.
+2. `cmyk` :String - The CMYK color values.
+3. `web` :String - The web color code (hex).
+4. `rgb` :String - The RGB color values.
+5. `title` :String - can be added by writing into the Body of the Component. Will be displayed in the hex code Color.
+
+
+## Special Features
+
+This Component can be Clicked to copy the Hex value of the Given Color.
+
+
+
+:::info
+All The Props of this Component are Optional
+:::
+

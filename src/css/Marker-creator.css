@@ -1,0 +1,163 @@
+/* .marker-creator */
+
+.marker-creator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+
+
+    input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 16px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    button {
+        padding: 10px 20px;
+        margin: 0 0 10px 0;
+        border: none;
+        color: #fff;
+        background-color: #007bff;
+        border-radius: 10px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+
+        &:hover {
+            background-color: #0056b3;
+            transform: scale(1.02);
+        }
+    }
+
+    .ImagemapContainer {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 100%;
+        border: 1px solid #eee;
+        border-radius: 10px;
+    }
+
+    .marker {
+        width: 8vw;
+        max-width: 30px;
+        aspect-ratio: 1/1;
+        background-color: var(--custom-red);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        color: white;
+    }
+
+    .squareMarker {
+        border: 2px solid var(--custom-red);
+        position: absolute;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .resizeHandle {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background-color: #007bff;
+        bottom: -6px;
+        right: -6px;
+        cursor: se-resize;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    #output {
+        position: relative;
+        margin-top: 20px;
+        border-radius: 14px;
+        overflow: hidden;
+    }
+
+    code {
+        display: block;
+        background: #1e1e1e;
+        color: #d4d4d4;
+        padding: 20px;
+        border-radius: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+        white-space: pre-wrap;
+        overflow: scroll;
+        position: relative;
+        font-weight: bold;
+    }
+
+    .code-tag {
+        color: #569cd6;
+    }
+
+    .code-attribute {
+        color: #9cdcfe;
+    }
+
+    .code-value {
+        color: #ce9178;
+    }
+
+    .code-number {
+        color: #b5cea8;
+    }
+
+    .code-link {
+        color: #4ec9b0;
+        text-decoration: underline;
+    }
+
+    #copyButton {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        padding: 6px 10px;
+        font-size: 12px;
+        background-color: #28a745;
+        border-radius: 10px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .marker-creator .marker {
+        width: 2.5vw;
+        font-size: 1vw;
+    }
+}
+
+@media (min-width: 1400px) {
+    .marker-creator .marker {
+        font-size: 17px;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .marker-creator {
+        width: 100vw;
+    }
+}

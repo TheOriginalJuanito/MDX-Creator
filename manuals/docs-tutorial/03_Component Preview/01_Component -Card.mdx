@@ -1,0 +1,47 @@
+---
+id: 'card'
+sidebar_label: 'Card'
+sidebar_position: 1
+slug: /card
+description: 'Card'
+---
+
+# Card
+
+<Container>
+    <Row>
+        <Col xs={12} md={4}>
+            <Card bg='/img/logo.png' LinkTo='/Card' label='Button Label' scale={.7}>
+                    Card Content. <Icon src= '/img/logo.svg' />
+            </Card>
+        </Col>
+        <Col xs={12} md={4}>
+            <Card bg='/img/logo.png' LinkTo='/Card' label='Button Label' scale={.7}>
+                    Card Content
+            </Card>
+        </Col>
+        <Col xs={12} md={4}>
+            <Card bg='/img/logo.png' LinkTo='/Card' label='Button Label' scale={.7}>
+                    Card Content
+            </Card>
+        </Col>
+    </Row>
+</Container>
+
+---
+
+
+```html title='index.mdx'  showLineNumbers
+<Card bg='/img/logo.png' LinkTo='/Card' label='Button Label' scale={.7}>
+    Card Content
+</Card>
+```
+
+## Props
+
+`bg`: string - Background image path (From `Static` Folder).  
+`LinkTo`: string - Link path (Link Via Page Id).  
+`label`: string - text on the Button.  
+`scale`: number - Scale of the bgImage (default is 1).  
+`textContent`: String - To add text to the Card write in to the Card Body.  
+
